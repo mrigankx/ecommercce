@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/ecommerce-website.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Song+Myung" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script  src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+	<title>E-Commerce</title>
+	
+		
+</head>
+<body>
+	
+<div id="head1" class="row">
+		<img src="images\logo.png" style="width: 245px; height: 56px;margin-top: 5px;margin-left: 20px;">
+		<input type="text" name="searchbox" id="searchbox" placeholder="Search for product here......">
+		<button type="button" id="searchbutton">
+    <span class="fa fa-search"></span> Search
+  </button>
+		<h3 id="call">Call 000-000-000</h3>
+</div>
+	
+		<ul id="li1">
+			<a href="E-Commerce.html"><li>Home</li></a>
+			<a href="#"><li>Categories</li></a>
+			<a href="#"><li>Cart</li></a>
+			<a href="#"><li>Wishlist</li></a>
+			<a href="#"><li>Contact Us</li></a>
+			<a href="#"><li>About Us</li></a>
+		</ul>
+	
+	<div id="slider">
+		<div class="slides">
+			<div class="slide1">
+				<img src="images\Laptop.png" class="img1 w3-animate-right w3-animate-opacity">
+			</div>
+			<div class="slide1">
+				<img src="images\Drone.png" class="img2 w3-animate-left w3-animate-opacity">
+			</div>
+			<div class="slide1">
+				<img src="images\y37.png" class="img3 w3-animate-right w3-animate-opacity">
+			</div>
+			<div class="slide1">
+				<img src="images\VR.png" class="img4 w3-animate-left w3-animate-opacity">
+			</div>
+			<div class="constant">
+				<h1>Special Offer</h1>
+				<h3>Upto <b>50%</b> OFF on Electronics</h3>
+				<h2>Hurry Up!</h2>
+				
+			</div>
+		</div>
+	</div>
+	<script>
+		var myIndex=0;
+		AutoSlide();
+
+		function AutoSlide(){
+			var i;
+			var x=document.getElementsByClassName("slide1");
+			for(i=0;i<x.length;i++){
+				x[i].style.display="none";
+			}
+			myIndex++;
+			if(myIndex>x.length){myIndex=1}
+				x[myIndex-1].style.display="block";
+			setTimeout(AutoSlide,2000);
+		}
+	</script>
+	<div id="contain" class="row">
+		<div id="cartd">
+			<h5 align="center"><b>CART</b></h5><button id="thisremove">Remove</button>
+			<button id="checkout">Check Out</button>
+			<hr>
+			<div id="crt" class="parent" style="height: 100px;width: 300px;">
+			<p id="cartx">No item in cart</p>
+			</div>
+		</div>
+		<div id="pr">
+			<p class="featuredpara">Latest</p>
+	<div class="deals">
+		
+		<fieldset class="col1">
+			<legend style="color: white;padding: 2% 2% 1% 2%;background-color: black;">New</legend>
+			<a href="sony.html" style="text-decoration: none;color: black;">
+			<img src="images\videocamera.png" class="img1">
+			<h3>$48<strike>$92.45</strike></h3>
+			<div class="desc"> <h4> Sony HDR-PJ410 Full HD Camcorder</h4></div>
+		</a>
+		<button class="btn" data_value="48" data_name="Sony HDR-PJ410 Camcorder" id="clickhere" >Add to cart</button>
+		</fieldset>
+					
+		<fieldset class="col2">
+			<legend style="color:white;padding: 2% 2% 1% 2%;background-color: black;" >New</legend>
+			<a href="10gb.html" style="text-decoration: none;color: black;">
+			<img src="images\usb.png" class="img1">
+			<h3>$8<strike>$12.5</strike></h3>
+			<div class="desc"> <h4> SanDisk Cruzer Blade 16 GB USB Flash Drive USB 3.0</h4></div>
+			</a>
+			<button  id="clickhere" data_name="SanDisk 16 GB USB Flash Drive" data_value="8"   class="btn" >Add to cart</button>
+		</fieldset>
+
+		<fieldset class="col3">
+
+		<legend style="color:white;padding: 2% 2% 1% 2%;background-color: black;" >New</legend>
+			<a href="nikon.html" style="text-decoration: none;color: black;">
+		
+			<img src="images\nikon.png" class="img1">
+			<h3>$15<strike>$50.58</strike></h3>
+			<div class="desc"> <h4> Nikon EOS 200D Digital SLR Camera</h4></div>
+			</a>
+			<button  id="clickhere" data_name="Nikon EOS Digital SLR Camera"  data_value="15" class="btn" >Add to cart</button>
+		</fieldset>
+
+	</div>
+	<p class="featuredpara">Deals</p>
+	<div class="deals">
+		<fieldset class="col1">
+			<legend style="color:white;padding: 2% 2% 1% 2%;background-color: black;" >Deal</legend>
+			<a href="iron.html" style="text-decoration: none;color: black;">
+			
+			<img src="images\iron.png" class="img1">
+			<h3>$9<strike>$11.49</strike></h3>
+			<div class="desc"> <h4> Steamglide Professional 2600 W Steam Iron 21370</h4></div>
+			</a>
+			<button data_value="9" data_name="Steamglide Steam Iron 21370" id="clickhere"  class="btn" >Add to cart</button>
+		</fieldset>
+
+		<fieldset class="col2">
+			<legend style="color:white;padding: 2% 2% 1% 2%;background-color: black;">Deal</legend>
+			<a href="wmachine.html" style="text-decoration: none;color: black;">
+			
+			<img src="images\wmachine.png" class="img1">
+			<h3>$50<strike>$92.85</strike></h3>
+			<div class="desc"> <h4> LG Washing Machine</h4></div>
+			</a>
+			<button  data_value="50" id="clickhere" data_name="LG Washing Machine" class="btn" >Add to cart</button>
+		</fieldset>
+
+		<fieldset class="col3">
+			<legend style="color:white;padding: 2% 2% 1% 2%;background-color: black;" >Deal</legend>
+			<a href="drone.html" style="text-decoration: none;color: black;">
+			
+			<img src="images\Drone.png" class="img1">
+			<h3>$61<strike>$98.76</strike></h3>
+			<div class="desc"> <h4> DJI CP.PT.000167 Phantom 3 Standard Drone</h4></div>
+			</a>
+
+			<button id="clickhere" data_value="61" data_name="DJI Standard Drone" class="btn" >Add to cart</button>
+		</fieldset>
+
+		</div>
+	</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+				
+				$("#pr :button").click(function(){
+					var price=$(this).attr("data_value");
+					var name=$(this).attr("data_name");
+					var fname=name+": $"+price;
+					var cartItem="<div class='ijq'>"+fname+"</div>";
+				$("#crt #cartx").hide();
+				$("#thisremove").fadeIn("slow");
+				$("#checkout").fadeIn("slow");
+            	$("#crt").append(cartItem).addClass("child");
+            	});
+
+            	$("#thisremove").click(function(){
+            		$("#crt").children().last().remove();
+            	});
+            
+			    
+				
+		});
+	</script>
+	
+</body>
+</html>
